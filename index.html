@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تجمع ثانوية عامة | Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 تجمع ثانوية عامة - Study Hub</h1>
+        <p class="subtitle">نذاكر سوا، نشجع بعض، ونعدي الضغط ده مع بعض!</p>
+
+        <!-- قسم التايمر -->
+        <div class="timer-box">
+            <h2>مؤقت المذاكرة المشترك (50 دقيقة)</h2>
+            <div id="timer">50:00</div>
+            <div class="controls">
+                <button onclick="startTimer()">ابدأ المذاكرة</button>
+                <button onclick="pauseTimer()">وقّف مؤقت</button>
+                <button onclick="resetTimer()">إعادة ضبط</button>
+            </div>
+        </div>
+
+        <!-- قسم مشاركة المذكرات والتريكات -->
+        <div class="community-box">
+            <h2>📌 تريكات وملاحظات الدفعة</h2>
+            <p>شارك هنا أفكار الفيزياء (زي قانون أوم) والرياضة والكلمات الصعبة!</p>
+            <textarea id="noteInput" placeholder="اكتب تريكة أو مسألة واجهتك..."></textarea>
+            <button onclick="addNote()">نزل الملاحظة</button>
+            <div id="notesList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
